@@ -89,7 +89,7 @@ const Navbar = () => {
                   </li>
                   {user.role === "admin" && (
                     <li>
-                    <Link className="dropdown-item" to="/settings">
+                    <Link className="dropdown-item" to="/admin/dashboard">
                       <i className="fas fa-cog"></i> Admin Settings
                     </Link>
                   </li>
