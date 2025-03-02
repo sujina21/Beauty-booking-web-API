@@ -43,7 +43,7 @@ const Makeup = () => {
     } else {
       const allMakeups = [...getAllMakeup];
       const filteredMakeup = allMakeups.filter((makeup) =>
-        makeup.name.toLowerCase().includes(searchTerm.toLowerCase())
+        makeup.title.toLowerCase().includes(searchTerm.toLowerCase())
       );
       setGetAllMakeup(filteredMakeup);
     }
