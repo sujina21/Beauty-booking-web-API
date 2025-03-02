@@ -67,7 +67,7 @@ const Register = () => {
     const errors = validate();
     if (Object.keys(errors).length === 0) {
       const data = {
-        fullname:FullName,
+        name:FullName,
         phone:Phone,
         email:email,
         password:password
