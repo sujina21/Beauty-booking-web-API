@@ -42,7 +42,7 @@ const Nail = () => {
     } else {
       const allNails = [...getAllNail];
       const filteredNail = allNails.filter((nail) =>
-        nail.name.toLowerCase().includes(searchTerm.toLowerCase())
+        nail.title.toLowerCase().includes(searchTerm.toLowerCase())
       );
       setGetAllNail(filteredNail);
     }
