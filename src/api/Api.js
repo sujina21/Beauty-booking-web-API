@@ -67,8 +67,10 @@ export const getUserDetails = (data) => api.get('/users/', data);
 export const updateUserDetails = (data) => api.patch('/users/', data);
 
 export const createBooking = (data) => api.post('/booking/', data);
-export const getAllUserBookings = () => api.get('/booking/user/');
-
+export const getAllUser = () => api.get('/users/all/');
+export const getAllBooking = () => api.get('/booking/');
+export const updateBookingStatus = (id, status) => api.patch(`/booking/${id}/${status}`);
+export const updateUserRole = (id,status) => api.patch(`/users/role/${id}/${status}`);
 //creating admin api
 
 export const addServiceApi = (data) => api.post('/services', data);
