@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { getAllUserBookings, getUserDetails, updateUserDetails } from '../../api/Api';
+import { getAllBooking, getUserDetails, updateUserDetails } from '../../api/Api';
 import './Profile.css';
 
 const Profile = () => {
@@ -44,7 +44,7 @@ const Profile = () => {
 
   const fetchedAllUserBooking = async () => {
     try {
-      const response = await getAllUserBookings();
+      const response = await getAllBooking();
       if (response.data.success) {
         setBookings(response.data.data);
       }
